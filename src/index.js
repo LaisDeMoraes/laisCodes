@@ -30,7 +30,7 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-let description = document.querySelector("#description");
+let descriptionElement = document.querySelector("#description");
 descriptionElement.innerHTML = response.data.weather[0].description;
 
 function convertToFahrenheit(event) {
