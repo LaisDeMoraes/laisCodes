@@ -31,7 +31,7 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
 let descriptionElement = document.querySelector("#description");
-descriptionElement.innerHTML = response.data.weather[0].description;
+descriptionElement.innerHTML = response.data.weather.main.description;
 
 function convertToFahrenheit(event) {
   event.preventDefault();
