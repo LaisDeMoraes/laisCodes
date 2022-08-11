@@ -72,3 +72,6 @@ img {
 input {
   display: right;
 }
+.description:first-letter {
+  text-transform: capitalize;
+}
