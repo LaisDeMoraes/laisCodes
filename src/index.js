@@ -53,9 +53,8 @@ function displayWeatherCondition(response) {
     response.data.weather[0].description;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
+    response.data.main.temp );
   document.querySelector("#humidity").innerHTML = reponse.data.main.humidity;
-  );
 }
 
 function search(event) {
