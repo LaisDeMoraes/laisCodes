@@ -72,6 +72,6 @@ img {
 input {
   display: right;
 }
-#description-weather:first-letter {
+#description {
   text-transform: capitalize;
 }
