@@ -49,13 +49,12 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
 function displayWeatherCondition(response) {
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
+  document.querySelector("#description").innerHTML = response.data.weather[0].description;
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp );
+  document.querySelector("#temperature").innerHTML = Math.round( response.data.main.temp );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#icon").innerHTML = `http://openweathermap.org/img/wn/04d@2x.png` ;
 }
 
 function search(event) {
