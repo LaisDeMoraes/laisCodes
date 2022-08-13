@@ -53,7 +53,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round( response.data.main.temp );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#wind").innerHTML = Math.round( response.data.wind.speed) ;
   document.querySelector("#icon").iconElement.setAttribute("src", `http://openweathermap.org/img/wn/04d@2x.png`);
 }
 
