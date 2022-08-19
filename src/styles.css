@@ -87,3 +87,6 @@ input {
 .weather-forecast-temperature-max {
   color: #000;
 }
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
