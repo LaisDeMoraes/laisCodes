@@ -95,3 +95,4 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
+search("Sao Paulo");
