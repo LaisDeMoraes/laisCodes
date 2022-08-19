@@ -75,6 +75,12 @@ input {
 #description {
   text-transform: capitalize;
 }
-.weather-forcast-date {
+
+.weather-forecast {
+  margin-top: 20px;
+  text-alight: center;
+}
+.weather-forecast-date {
   font-size: 16px;
   color: #000;
+}
