@@ -64,3 +64,9 @@ function search(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  
+  forecastElement.innerHTML = "Forescast";
+}
