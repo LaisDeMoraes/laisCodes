@@ -90,35 +90,20 @@ function displayForecast(response) {
         </div>
       </div>
   `;
+    }
   });
   
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function getForescast(coordinates) {
   console.log(coordinates};
   let apiKey = "55e4142b3e1eff48b5d74842f7963907";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${API key}&units=metric`;
-  
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
   
   }
   
-
-
  getForecast(response.data.coord);
 }
-
-
-
-
-
-
-
-
-
-search("Sao Paulo");
-
-
-
