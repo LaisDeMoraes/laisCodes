@@ -56,7 +56,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = Math.round( response.data.wind.speed ) ;
   document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
-
+  
 function search(event) {
   event.preventDefault();
   let apiKey = "55e4142b3e1eff48b5d74842f7963907";
@@ -65,6 +65,13 @@ function search(event) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+  
 function displayForecast(response) {
   let forecast = reponse.data.daily;
   
